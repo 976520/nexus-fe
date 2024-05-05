@@ -104,7 +104,7 @@
 
     1. 새 로컬 저장소를 만든다.
 
-        ```command
+        ```
         git init
         ```
 
@@ -113,111 +113,95 @@
         ```
         git clone [경로]
         ```
-        
-        </aside>
 
-        <aside>
-        <img src="/git/Powershell_256 1.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git clone [사용자명]@[호스트]:[경로]
-
-        </aside>
+        ```
+        git clone [사용자명]@[호스트]:[경로]
+        ```
 
 2. HEAD 관련
 
     1. 작업한 파일을 index에 추가한다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git add [파일명]
+        ```
+        git add [파일명]
+        ```
 
-        </aside>
-
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git add .
-
-        </aside>
+        ```
+        git add .
+        ```
 
     2. 변경 내용을 commit한다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git commit -m [설명]
-
-        </aside>
+        ```
+        git commit -m [설명]
+        ```
 
 3. 원격 저장소
 
     1. 기존의 원격 저장소를 clone한 것이 아닐 때, 원격 저장소의 주소를 Git에게 알려준다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git remote add origin [주소]
-
-        </aside>
+        ```
+        git remote add origin [주소]
+        ```
 
     2. HEAD에 있는 파일을 원격 저장소로 보낸다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" width="40px" /> git push origin [branch명 | master]
-
-        </aside>
+        ```
+        git push origin [branch명 | master]
+        ```
 
 4. branch 관련
 
     1. branch의 목록을 확인한다
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" width="40px" /> git branch
-
-        </aside>
+        ```
+        git branch
+        ```
 
     2. branch를 생성한다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" width="40px" /> git branch [branch명]
-
-        </aside>
+        ```
+        git branch [branch명]
+        ```
 
     3. (branch를 생성하고) 그 branch로 이동한다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%202.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%202.png" width="40px" /> git cheakout (-b) [branch명 | master]
-
-        </aside>
+        ```
+        git checkout (-b) [branch명 | master]
+        ```
 
     4. branch를 삭제한다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%203.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%203.png" width="40px" /> git cheakout -d [branch명]
-
-        </aside>
+        ```
+        git checkout -d [branch명]
+        ```
 
     5. branch를 원격 저장소로 보낸다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%204.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%204.png" width="40px" /> git push origin [branch명]
-
-        </aside>
+        ```
+        git push origin [branch명]
+        ```
 
 5. 갱신
 
-    로컬 저장소를 원격 저장소(의 특정 sbranch)에 맞춰 pull한다.
+    로컬 저장소를 원격 저장소(의 특정 branch)에 맞춰 pull한다.
 
-    <aside>
-    <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" width="40px" /> git pull (origin [branch명])
-
-    </aside>
+    ```
+    git pull (origin [branch명])
+    ```
 
 6. 병합
 
     1. 변경사항을 확인할 수 있다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" width="40px" /> git diff [branch명] [비교 대상 branch명]
-
-        </aside>
+        ```
+        git diff [branch명] [비교 대상 branch명]
+        ```
 
     2. 다른 branch의 파일을 현재 가지에 merge한다.
 
-        <aside>
-        <img src="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256%201.png" width="40px" /> git merge [branch명]
-
-        </aside>
+        ```
+        git merge [branch명]
+        ```
 
 ---
