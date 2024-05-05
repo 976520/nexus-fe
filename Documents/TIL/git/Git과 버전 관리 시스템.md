@@ -104,16 +104,16 @@
 
     1. 새 로컬 저장소를 만든다.
 
-        <aside>
-        <img src="/git/Powershell_256 1.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git init
-
-        </aside>
+        ```command
+        git init
+        ```
 
     2. 로컬/원격 저장소를 clone 한다.
 
-        <aside>
-        <img src="/git/Powershell_256 1.png" alt="Git%E1%84%80%E1%85%AA%20%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5%20%E1%84%89%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A6%E1%86%B7%207e112c9ed77e423da9a88f74142c5333/Powershell_256.png" width="40px" /> git clone [경로]
-
+        ```
+        git clone [경로]
+        ```
+        
         </aside>
 
         <aside>
