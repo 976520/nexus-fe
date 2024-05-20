@@ -1,0 +1,31 @@
+#name-input {
+  top: 100px;
+  height: 70px;
+  width: 500px;
+  position: relative;
+  font-size: 36px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(37 99 235);
+  outline: none;
+  color: white;
+}
+
+#next-button {
+  border: none;
+  border-radius: 12px;
+  height: 55px;
+  width: 350px;
+  top: 500px;
+  position: relative;
+  transition-duration: 200ms;
+  background-color: rgb(59 130 246);
+  color: white;
+  font-size: 20px;
+}
+
+#next-button:hover {
+  cursor: pointer;
+  transition-duration: 200ms;
+  background-color: rgb(37 99 235);
+}

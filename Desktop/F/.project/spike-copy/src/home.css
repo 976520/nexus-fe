@@ -1,0 +1,53 @@
+/*
+#glow-1,
+#glow-2,
+#glow-3 {
+  height: 30px;
+  width: 100px;
+  top: 120px;
+  position: absolute;
+  border: 1px solid cyan;
+  box-shadow: 0 6px 20px -6px cyan;
+  z-index: 10;
+}
+*/
+.title {
+  top: 105px;
+  position: relative;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.subtitle {
+  top: 90px;
+  position: relative;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+#image {
+  top: 140px;
+  position: relative;
+  width: 25%;
+  vertical-align: bottom;
+}
+
+#next-button {
+  border: none;
+  border-radius: 12px;
+  height: 55px;
+  width: 350px;
+  top: 230px;
+  position: relative;
+  transition-duration: 200ms;
+  background-color: rgb(59 130 246);
+  color: white;
+  font-size: 20px;
+}
+
+#next-button:hover {
+  cursor: pointer;
+  transition-duration: 200ms;
+  background-color: rgb(37 99 235);
+}
